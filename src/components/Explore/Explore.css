@@ -1,0 +1,79 @@
+/* .cycle-area {
+    background-image: url("../../images/background.png");
+    background-repeat: no-repeat;
+    background-position: cover;
+    height: 600px;
+    width: 700px;
+
+} */
+
+ .delivery-container {
+    position: relative;
+    width: 600px;
+    height: 500px;
+  }
+  
+  .cycle-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../images/background.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .cycle {
+    position: absolute;
+    bottom: 50px;
+    left: 300px;
+    width: 350px;
+    height: 250px;
+    background-image: url("../../images/cycle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: cycle-move 4s linear infinite;
+  }
+  
+  .delivery-man {
+    position: absolute;
+    bottom: 50px;
+    left: 60%;
+    width: 100px;
+    height: 200px;
+    background-image: url("../../images/cycle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: walk 1s steps(8) infinite;
+  }
+  
+  @keyframes cycle-move {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  @keyframes walk {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -800px 0;
+    }
+  }
+  
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .cycle-area {
+        height: 400px;
+        width: 350px;
+    }
+}
